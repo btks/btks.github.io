@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bottka Sándor tulajdona</title>
-	<video autoplay muted loop id="myVideo">
-  <source src="btks/Bubble Turning Into Ice.mp4" type="video/mp4">
-</video>
-	
-<style>
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
+	<title>Bottka ásndor pendriveja</title>
+	<style type="text/css">
+		*{
+    transition: all 0.6s;
 }
-</style>
+
+html {
+    height: 100%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: #888;
+    margin: 0;
+}
+
+#main{
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.fof{
+	  display: table-cell;
+	  vertical-align: middle;
+}
+
+.fof h1{
+	  font-size: 50px;
+	  display: inline-block;
+	  padding-right: 12px;
+	  animation: type .5s alternate infinite;
+}
+
+@keyframes type{
+	  from{box-shadow: inset -3px 0px 0px #888;}
+	  to{box-shadow: inset -3px 0px 0px transparent;}
+}
+	</style>
 </head>
 <body>
-	
-	<?php require='log.php'?>
-	
-	<h1>Ez a Pendrive Bottka Sándor tulajdona</h1><br>
-	<h1>Kérjük mielőbb jutassa vissza hozzá</h1><br>
-	<h1>+36305556699</h1>
+
+	<div id="main">
+    	<div class="fof">
+        		<h1> Ez a pendrive Bottka Sándor tulajdona, kérlek juttasd vissza hozzá:+36 30 555 6699</h1>
+    	</div>
+</div>
+
 </body>
 </html>
